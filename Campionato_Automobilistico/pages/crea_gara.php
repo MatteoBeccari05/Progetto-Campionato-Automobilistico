@@ -1,5 +1,5 @@
 <?php
-$content = 'Inserimento Pilota';
+$content = 'Inserimento Gara';
 require_once '../strutture_pagina/functions_active_navbar.php';
 require '../strutture_pagina/navbar.php';
 require_once '../connessione_db/operazioni.php';
@@ -13,30 +13,25 @@ require_once '../connessione_db/operazioni.php';
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="../style/style.css">
-    <title>Inserimento</title>
+    <title>Inserimento Gara</title>
 </head>
 <body>
 <h2 class="titolo"><?=$content?></h2>
 
-<form action="../passaggio_dati/inserimento.php" method="POST">
+<form action="../passaggio_dati/gara.php" method="POST">
     <label for="nome">Nome:</label>
     <input type="text" id="nome" name="nome" required><br><br>
 
-    <label for="cognome">Cognome:</label>
-    <input type="text" id="cognome" name="cognome" required><br><br>
+    <label for="data">Inserisci la data della gara:</label>
+    <input type="date" id="data" name="data" required>
+    <br> <br>
 
-    <label for="nazionalita">Nazionalità:</label>
-    <input type="text" id="nazionalita" name="nazionalita"><br><br>
-
-    <label for="numero">Numero di Gara:</label>
-    <input type="number" id="numero" name="numero" required><br><br>
-
-    <label for="id_casa">Casa Automobilistica:</label>
-    <select id="id_casa" name="id_casa" required>
-        <?php echo ritorno_case(); ?>
+    <label for="luogo">Luogo:</label>
+    <select id="luogo" name="luogo" required>
+        <?php echo ritorno_luoghi(); ?>
     </select><br><br>
 
-    <input type="submit" value="Inserisci Pilota">
+    <input type="submit" value="Inserisci Gara">
 </form>
 
 <br>

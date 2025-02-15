@@ -8,3 +8,15 @@ SQLSTATE[HY000] [1049] Unknown database 'campionato' -- 2025-02-13 10:52:19
 SQLSTATE[HY000] [1049] Unknown database 'campionato' -- 2025-02-13 10:52:38
 SQLSTATE[HY000] [1049] Unknown database 'campionato' -- 2025-02-13 10:53:11
 SQLSTATE[HY000] [1049] Unknown database 'campionato' -- 2025-02-13 10:55:07
+SQLSTATE[HY000] [1049] Unknown database 'campionato' -- 2025-02-15 13:35:36
+SQLSTATE[42S22]: Column not found: 1054 Unknown column 'casa' in 'field list' -- 2025-02-15 14:44:09
+SQLSTATE[42S22]: Column not found: 1054 Unknown column 'casa' in 'field list' -- 2025-02-15 14:46:19
+SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`campionato`.`piloti`, CONSTRAINT `piloti_ibfk_1` FOREIGN KEY (`id_casa`) REFERENCES `caseautomobilistiche` (`id`)) -- 2025-02-15 14:58:00
+SQLSTATE[42S22]: Column not found: 1054 Unknown column 'nome' in 'field list' -- 2025-02-15 15:29:02
+SQLSTATE[42S22]: Column not found: 1054 Unknown column 'nome' in 'field list' -- 2025-02-15 15:29:05
+SQLSTATE[42S22]: Column not found: 1054 Unknown column 'nome' in 'field list' -- 2025-02-15 15:29:12
+SQLSTATE[42S22]: Column not found: 1054 Unknown column 'nome' in 'field list' -- 2025-02-15 15:34:25
+SQLSTATE[42S22]: Column not found: 1054 Unknown column 'nome' in 'field list' -- 2025-02-15 15:34:28
+SQLSTATE[42S22]: Column not found: 1054 Unknown column 'nome' in 'field list' -- 2025-02-15 15:35:09
+Controlla i dati inseriti -- 2025-02-15 15:43:41
+Controlla i dati inseriti -- 2025-02-15 15:49:35
